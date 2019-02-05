@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="admin col-xs-4">
+            <form action="admin_delete_record.php" method="post">
+                <select name="id" id="">
+                    <option value="" disabled selected hidden>Entry to Delete...</option>
+
+                    <?php while($row = mysqli_fetch_assoc($query_list)) : ?>
+
+                    <option value="<?php echo $row['id']; ?>" id="<?php echo $row['id']; ?>"><strong><?php echo $row['id']; ?></strong>: <?php echo $row['name']; ?></option>
+
+                    <?php endwhile; ?>
+
+                </select>
+        
+                <input class="btn btn-danger" type="submit" value="Delete" name="delete">
+        
+            </form>
+        </div>
+        
+        <div class="col-xs-8">
+            <table>
+                <tr>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        ID
+                    </th>
+                </tr>
+
+                <?php while($row = mysqli_fetch_assoc($query_read)) : ?>
+                    <tr>
+                        <td>
+                            <?php echo $row['date']; ?>
+                        </td>
+                        <td>
+                            <?php echo $row['name']; ?>
+                        </td>
+                        <td>
+                            <?php echo $row['email']; ?>
+                        </td>
+                        <td>
+                            <?php echo $row['id']; ?>
+                        </td>
+                    </tr>
+                <?php endwhile; ?>
+
+            </table>
+        </div>
+        
+    </div><!--end of row-->
+             
+    
+
+  </div>
+   
+
+    
+</body>
+</html>

@@ -1,0 +1,257 @@
+/*===GLOBAL===*/
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+   /* max-width: 2193px;*/
+    /*position: relative;*/
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    /*background: #eee;*/
+    background: #666;
+    overflow: auto;
+}
+form{
+    /*border: solid 2px gold;*/
+    text-align: center;
+    padding: 20px;
+}
+footer{
+   background-color: #ADD8E6;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    /*color: #fff;*/
+    color: #0000FF;
+    padding-top: 10px;
+}
+footer img{
+    height: 70px;
+}
+footer i{
+    font-size: 30px;
+}
+.container-fluid{
+    margin: 0;
+}
+.error{
+    background-color: #d9534f;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*===INDEX PAGE===*/
+#nav{
+    background: #ADD8E6;
+    overflow: hidden;
+    padding: 0px 15px 10px 10px;
+}
+#nav #navLinks{
+    display: inline-block;
+    float: right;
+   /* color: #fff;*/
+    color: #0000FF
+}
+#nav #navLinks p{
+    display: inline;
+    padding: 0px 15px;
+    position: relative;
+    top: -33px;
+    font-size: 20px;
+}
+#logo{
+    position: relative;
+    top: 10px;
+}
+#logo img{
+    height: 65px;
+}
+#logo h4{
+    display: inline;
+    /*color: #fff;*/
+    color: #0000FF;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    position: relative;
+    top: 7px;
+
+}
+#heder{
+    position: relative;
+}
+#header img{
+    width: 100%;
+}
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'Mali', cursive;*/
+    text-transform: capitalize;
+    text-align: center;
+
+}
+h2{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 50px;
+}
+.cta{
+    /*border: solid 2px blue;*/
+    /*background: rgba(255,255,255,1);*/
+   /* background: #eee;*/
+   /* box-shadow: -10px 10px 10px #333;*/
+    position: absolute;
+    top: 105px;
+    right: 15px;
+    color: #333;
+    padding-top: 5px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+.cta h1{
+    color: blue;
+    text-shadow: -1px 1px 1px #333;
+}
+.cta form{
+    text-align: center;
+    /*background: green;*/
+    display: inline-block;
+    margin: auto;
+}
+.cta .btn{
+   /* background: #C865AE;*/
+    box-shadow: -10px 10px 10px #333;
+    color: #fff;
+}
+.cta a{
+    text-align: center;
+    color: #000;
+    text-decoration: underline;
+}
+.form-group{
+    margin-bottom: 15px !important;
+    text-align: left;
+}
+.admin-login{
+    display: block;
+    margin: auto;
+    font-size: 22px;
+    border-radius: 10px;
+}
+#admin-login-link{
+    display: block;
+    color: #000;
+    margin: auto;
+}
+#howItWorks{
+    padding: 5px 25px;
+    color: #fff;
+}
+#howItWorks h2{
+    font-size: 25px;
+    text-align: center;
+   /* text-decoration: underline;*/
+}
+#howItWorks img{
+    width: 100%;
+}
+#howItWorks p{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 45px;
+}
+/*===THANK YOU===*/
+#thank-you{
+    background: rgba(255,255,255,.7);
+    height: 100%;
+    padding-top: 50px;
+}
+/*===ADMIN_LOGIN===*/
+.admin-login label{
+    font-size: 20px;
+}
+.admin-login .btn{
+    font-size: 20px;
+}
+.admin-login form{
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    background: none;
+}
+/*===PAGE_ADMIN===*/
+form{
+    background: rgba(255,255,255, .7);
+    margin-bottom: 15px;
+}
+table{
+    width: 80%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    border: solid 1px #333;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px auto;
+    color: #000;
+    font-family: serif;
+    font-size: 22px;
+    
+}
+th{
+    text-align: center;
+}
+tr:nth-child(odd){
+    background: #aaa;
+}
+tr:nth-child(even){
+    background: rgba(255,255,255,.4);
+}
+.search-id{
+    font-weight: bold;
+}
+#update-credentials-form{
+    text-align: center;
+}
+#admin-controls{
+    height: 100vh;
+    overflow-y: scroll;
+}
+ #delete-btn{
+    display: block;
+    margin: 15px auto;
+}
+#table-container{
+    height: 600px;
+   overflow: hidden;
+}
+/*===MEDIA QUERY===*/
+@media(max-width: 2087px){
+    body{
+        background-size: cover;
+    }
+}
+@media(max-width: 767px){
+    body{
+        /*background: url("images/plumber.jpg");*/
+        background-position: left top;
+        background-size: cover;
+    }
+    .cta{
+        position: static;
+        margin: 5px 5px;
+        background: rgba(255,255,255,.7);
+        color: #000;
+    }
+    .cta h1{
+        font-size: 27px;
+    }
+    .cta h2, h3{
+        font-size: 25px;
+        font-family: 'Bad Script', cursive;
+    }
+}
